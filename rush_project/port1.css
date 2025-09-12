@@ -5,34 +5,34 @@ html, body {
       height: 100%;
     }
     .section {
-      height: 100vh; /* เต็มหน้าจอ */
-      display: flex;
+      height: 100vh; /* full screen */
+      display: flex;  
       justify-content: center;
-      align-items: stretch; /* ให้ทั้ง row สูงเท่ากัน */
+      align-items: stretch; /* all row เท่ากัน*/
       color: white;
     }
-    #about {
+    #about { /* about bg*/
       background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
       background-repeat: no-repeat;
       background-size: cover;
     }
-    #showcase {
+    #showcase {/* showcase bg*/
       background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdHAyMzgtYmFja2dyb3VuZC0wMy1rcHFvcjMwMS5qcGc.jpg");
       background-repeat: no-repeat;
       background-size: cover;
     }
-    #contract {
+    #contract { /*contract bg*/
       background-image: url("https://img.freepik.com/free-photo/abstract-flowing-neon-wave-background_53876-101942.jpg?semt=ais_hybrid&w=740&q=80");
       background-repeat: no-repeat;
       background-size: cover;
     }
     /* Navigation */
-    nav {
+    nav { 
       position: fixed;
       top: 10px;
       left: 50%;
-      transform: translateX(-50%);
-      z-index: 100;
+      transform: translateX(-50%);   /* ย้าย element กลับไปทางซ้ายครึ่งหนึ่งของความกว้าง element */
+      z-index: 100;  /* Layer */
     }
     nav a {
       margin: 0 10px;
@@ -69,7 +69,7 @@ html, body {
       border-radius: 10px;
       margin-top: 12%;
       height: 80%;
-      overflow-y: auto;
+      overflow-y: auto; /* คลุมเนื้อหาที่เกิน หากเกิน จะแสดง scrollbar  */
     }
 
     .card-box {
@@ -90,3 +90,4 @@ html, body {
     text-align: center;
     color: white;
   }
+
